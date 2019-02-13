@@ -1,6 +1,10 @@
 let express = require('express');
 const hbs = require('hbs');
 const animeData = require('./public/anime_lib').animeData;
+
+const danmachidubroute = require('./routes/dubbed/danmachi');
+const withmysmartphonedubroute = require('./routes/dubbed/withmysmartphone');
+
 const port = process.env.PORT || 3000;
 let app = express();
 
@@ -16,6 +20,7 @@ app.set('view engine', 'hbs');
 // });
 
 app.use(express.static(__dirname + '/'));
+
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
@@ -44,235 +49,26 @@ app.get('/dubbed', (req, res) => {
 
     res.render('dubbed.hbs', {
         pageTitle: 'Dubbed Anime List',
-        dubbedList: {
-            barakamon: {
-                name: anime[0].name,
-                id: anime[0].id
-            },
-            danmachi: {
-                name: anime[1].name,
-                id: anime[1].id
-            },
-            withmysmartphone: {
-                name: anime[2].name,
-                id: anime[2].id
-            }
-        }
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('withmysmartphone.hbs', {
-        pageTitle: anime.name,
-        ep1: {
-			name: `${anime.name} - EP #${anime.eps[0].ep_num}`,
-        	id: `/dubbed${anime.eps[0].id}`
+		barakamon: {
+			name: anime[0].name,
+			id: anime[0].id
 		},
-        ep2: {
-			name: `${anime.name} - EP #${anime.eps[1].ep_num}`,
-        	id: `/dubbed${anime.eps[1].id}`
+		danmachi: {
+			name: anime[1].name,
+			id: anime[1].id
 		},
-		ep3: {
-			name: `${anime.name} - EP #${anime.eps[2].ep_num}`,
-        	id: `/dubbed${anime.eps[2].id}`
-		},
-		ep4: {
-			name: `${anime.name} - EP #${anime.eps[3].ep_num}`,
-        	id: `/dubbed${anime.eps[3].id}`
-		},
-		ep5: {
-			name: `${anime.name} - EP #${anime.eps[4].ep_num}`,
-        	id: `/dubbed${anime.eps[4].id}`
-		},
-		ep6: {
-			name: `${anime.name} - EP #${anime.eps[5].ep_num}`,
-        	id: `/dubbed${anime.eps[5].id}`
-		},
-		ep7: {
-			name: `${anime.name} - EP #${anime.eps[6].ep_num}`,
-        	id: `/dubbed${anime.eps[6].id}`
-		},
-		ep8: {
-			name: `${anime.name} - EP #${anime.eps[7].ep_num}`,
-        	id: `/dubbed${anime.eps[7].id}`
-		},
-		ep9: {
-			name: `${anime.name} - EP #${anime.eps[8].ep_num}`,
-        	id: `/dubbed${anime.eps[8].id}`
-		},
-		ep10: {
-			name: `${anime.name} - EP #${anime.eps[9].ep_num}`,
-        	id: `/dubbed${anime.eps[9].id}`
-		},
-		ep11: {
-			name: `${anime.name} - EP #${anime.eps[10].ep_num}`,
-        	id: `/dubbed${anime.eps[10].id}`
-		},
-		ep12: {
-			name: `${anime.name} - EP #${anime.eps[11].ep_num}`,
-        	id: `/dubbed${anime.eps[11].id}`
+		withmysmartphone: {
+			name: anime[2].name,
+			id: anime[2].id
 		}
     });
 });
 
-app.get('/dubbed/in-another-world-with-my-smartphone-1', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[0].ep_num}`,
-        vidUrl: anime.eps[0].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[11].id}`,
-		nextid: `/dubbed${anime.eps[1].id}`
-    });
-});
+// Use Routes
+app.use(animeData.anime[1].id, danmachidubroute);
+app.use(animeData.anime[2].id, withmysmartphonedubroute);
 
-app.get('/dubbed/in-another-world-with-my-smartphone-2', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[1].ep_num}`,
-        vidUrl: anime.eps[1].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[0].id}`,
-		nextid: `/dubbed${anime.eps[2].id}`
-    });
-});
 
-app.get('/dubbed/in-another-world-with-my-smartphone-3', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[2].ep_num}`,
-        vidUrl: anime.eps[2].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[1].id}`,
-		nextid: `/dubbed${anime.eps[3].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-4', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[3].ep_num}`,
-        vidUrl: anime.eps[3].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[2].id}`,
-		nextid: `/dubbed${anime.eps[4].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-5', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[4].ep_num}`,
-        vidUrl: anime.eps[4].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[3].id}`,
-		nextid: `/dubbed${anime.eps[5].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-6', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[5].ep_num}`,
-        vidUrl: anime.eps[5].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[4].id}`,
-		nextid: `/dubbed${anime.eps[6].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-7', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[6].ep_num}`,
-        vidUrl: anime.eps[6].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[5].id}`,
-		nextid: `/dubbed${anime.eps[7].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-8', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[7].ep_num}`,
-        vidUrl: anime.eps[7].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[6].id}`,
-		nextid: `/dubbed${anime.eps[8].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-9', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[8].ep_num}`,
-        vidUrl: anime.eps[8].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[7].id}`,
-		nextid: `/dubbed${anime.eps[9].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-10', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[9].ep_num}`,
-        vidUrl: anime.eps[9].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[8].id}`,
-		nextid: `/dubbed${anime.eps[10].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-11', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[10].ep_num}`,
-        vidUrl: anime.eps[10].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[9].id}`,
-		nextid: `/dubbed${anime.eps[11].id}`
-    });
-});
-
-app.get('/dubbed/in-another-world-with-my-smartphone-12', (req, res) => {
-    
-    let anime = animeData.anime[2];
-    
-    res.render('vidPlayer.hbs', {
-        pageTitle: `${anime.name} - EP #${anime.eps[11].ep_num}`,
-        vidUrl: anime.eps[11].src,
-		listid: anime.id,
-		previd: `/dubbed${anime.eps[10].id}`,
-		nextid: `/dubbed${anime.eps[0].id}`
-    });
-});
 
 // app.get('/:id', (req, res) => {
 //     let anime = animeData.anime;
@@ -347,7 +143,9 @@ app.get('/dubbed/in-another-world-with-my-smartphone-12', (req, res) => {
 //     }
 // });
 
-
+app.use((req, res, next) => {
+	res.render('bad.hbs');
+});
 
 app.listen(port, () => {
   console.log(`Started on port ${port}`);
