@@ -1,0 +1,22 @@
+#home-body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.text-align-bottom {
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 15px auto;
+}
+
+.home-banner-img {
+  height: 45vh;
+  background-color: violet;
+  background-image: url(https://goo.gl/yEDLr3);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
