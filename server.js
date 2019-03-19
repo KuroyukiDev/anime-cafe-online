@@ -4,6 +4,8 @@ const animeData = require('./public/anime_lib').animeData;
 
 const danmachidubroute = require('./routes/dubbed/danmachi');
 const withmysmartphonedubroute = require('./routes/dubbed/withmysmartphone');
+const newgamedubroute = require('./routes/dubbed/newgame');
+
 
 const port = process.env.PORT || 3000;
 let app = express();
@@ -60,14 +62,18 @@ app.get('/dubbed', (req, res) => {
 		withmysmartphone: {
 			name: anime[2].name,
 			id: anime[2].id
-		}
+		},
+       newgame: {
+          name: anime[3].name,
+          id: anime[3].id
+       }
     });
 });
 
 // Use Routes
 app.use(animeData.anime[1].id, danmachidubroute);
 app.use(animeData.anime[2].id, withmysmartphonedubroute);
-
+app.use(animeData.anime[3].id, newgamedubroute);
 
 
 // app.get('/:id', (req, res) => {
