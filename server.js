@@ -2,9 +2,11 @@ let express = require('express');
 const hbs = require('hbs');
 const animeData = require('./public/anime_lib').animeData;
 
+const barakamondubroute = require('./routes/dubbed/barakamon');
 const danmachidubroute = require('./routes/dubbed/danmachi');
 const withmysmartphonedubroute = require('./routes/dubbed/withmysmartphone');
 const newgamedubroute = require('./routes/dubbed/newgame');
+const mikaguradubroute = require('./routes/dubbed/mikagura');
 
 
 const port = process.env.PORT || 3000;
@@ -26,54 +28,59 @@ app.use(express.static(__dirname + '/'));
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-		pageTitle: 'Anime Cafe',
+    pageTitle: 'Anime Cafe',
     subTitle: '~ Home ~'
-	});
+  });
 });
 
 app.get('/dubbed', (req, res) => {
-    // const renderDubbedList = () => {
-    //     return animeData.animeData.anime.forEach(series => {
-    //         let a = document.createElement('a');
-    //         let h4 = document.createElement('h4');
-    //         a.href=series.id;
-    //         a.key=series.id;
-    //         a.setAttribute('class', 'list-group-item');
-    //         h4.textContent=series.name;
-    //         h4.setAttribute('class', 'text-center list-group-item-header');
-    //         let li = a.appendChild(h4);
-    //         return li;
-    //         // return <a class="list-group-item" key="${series.id}" href=><h4 class="text-center list-group-item-header">${series.name}</h4></a>`;
-    //     });
-    // };
-
-    let anime = animeData.anime;
-
-    res.render('dubbed.hbs', {
-        pageTitle: 'Dubbed Anime List',
-		barakamon: {
-			name: anime[0].name,
-			id: anime[0].id
-		},
-		danmachi: {
-			name: anime[1].name,
-			id: anime[1].id
-		},
-		withmysmartphone: {
-			name: anime[2].name,
-			id: anime[2].id
-		},
-       newgame: {
-          name: anime[3].name,
-          id: anime[3].id
-       }
-    });
+  // const renderDubbedList = () => {
+  //     return animeData.animeData.anime.forEach(series => {
+  //         let a = document.createElement('a');
+  //         let h4 = document.createElement('h4');
+  //         a.href=series.id;
+  //         a.key=series.id;
+  //         a.setAttribute('class', 'list-group-item');
+  //         h4.textContent=series.name;
+  //         h4.setAttribute('class', 'text-center list-group-item-header');
+  //         let li = a.appendChild(h4);
+  //         return li;
+  //         // return <a class="list-group-item" key="${series.id}" href=><h4 class="text-center
+  // list-group-item-header">${series.name}</h4></a>`; }); };
+  
+  let anime = animeData.anime;
+  
+  res.render('dubbed.hbs', {
+    pageTitle: 'Dubbed Anime List',
+    barakamon: {
+      name: anime[0].name,
+      id: anime[0].id
+    },
+    danmachi: {
+      name: anime[1].name,
+      id: anime[1].id
+    },
+    withmysmartphone: {
+      name: anime[2].name,
+      id: anime[2].id
+    },
+    newgame: {
+      name: anime[3].name,
+      id: anime[3].id
+    },
+    mikagura: {
+      name: anime[4].name,
+      id: anime[4].id
+    }
+  });
 });
 
 // Use Routes
+app.use(animeData.anime[0].id, barakamondubroute);
 app.use(animeData.anime[1].id, danmachidubroute);
 app.use(animeData.anime[2].id, withmysmartphonedubroute);
 app.use(animeData.anime[3].id, newgamedubroute);
+app.use(animeData.anime[4].id, mikaguradubroute);
 
 
 // app.get('/:id', (req, res) => {
@@ -150,7 +157,7 @@ app.use(animeData.anime[3].id, newgamedubroute);
 // });
 
 app.use((req, res, next) => {
-	res.render('bad.hbs');
+  res.render('bad.hbs');
 });
 
 app.listen(port, () => {
