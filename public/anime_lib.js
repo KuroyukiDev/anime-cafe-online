@@ -478,6 +478,91 @@ module.exports.animeData = {
           id: "/mikagura-school-suite/12"
         }
       ]
+    },
+    {
+      name: "Asobi Ni Iku Yo!",
+      index: 5,
+      id: "/dubbed/asobi-ni-iku-yo",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/e9ykxlma16l10ny/Cat-Planet-Cuties-Ep-1.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/asobi-ni-iku-yo/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/3bnb41htphz79ov/Cat-Planet-Cuties-Ep-2.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/asobi-ni-iku-yo/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/6fyrhrhhysarmvl/Cat-Planet-Cuties-Ep-3.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/asobi-ni-iku-yo/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/c22ukvjpdwndu4p/Cat-Planet-Cuties-Ep-4.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/asobi-ni-iku-yo/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/t49clltcpknuq1k/Cat-Planet-Cuties-Ep-5.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/asobi-ni-iku-yo/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/l98j7k2hjs66ok0/Cat-Planet-Cuties-Ep-6.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/asobi-ni-iku-yo/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/7ua5olwz5rxzgie/Cat-Planet-Cuties-Ep-7.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/asobi-ni-iku-yo/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/enj3pp8bt2k94mt/Cat-Planet-Cuties-Ep-8.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/asobi-ni-iku-yo/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/88vgaau40jy7rdo/Cat-Planet-Cuties-Ep-9.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/asobi-ni-iku-yo/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/8hhqsv3u80bcg9o/Cat-Planet-Cuties-Ep-10.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/asobi-ni-iku-yo/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/6n6f2r2gdek79sy/Cat-Planet-Cuties-Ep-11.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/asobi-ni-iku-yo/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/l5ork01ftwota16/Cat-Planet-Cuties-Ep-12.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/asobi-ni-iku-yo/12"
+        },
+        {
+          src: "https://www.dropbox.com/s/x755vwhnhcdb0yv/Cat-Planet-Cuties-Ep-13.mp4?dl=1",
+          ep_num: 13,
+          index: 12,
+          id: "/asobi-ni-iku-yo/13"
+        }
+      ]
     }
   ]
 };
