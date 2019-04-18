@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
+<body id="home-body">
 
 <nav class="navbar navbar-inverse navbar-color-theme">
    <div class="container-fluid">
@@ -28,8 +28,8 @@
       <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav text-center">
             <li><a href="/"><h4>Home</h4></a></li>
-            <li class="active"><a href="/dubbed"><h4>Dubbed</h4></a></li>
-            <li><a href="/donate"><h4>Donate</h4></a></li>
+            <li><a href="/dubbed"><h4>Dubbed</h4></a></li>
+            <li class="active"><a href="/donate"><h4>Donate</h4></a></li>
          </ul>
       </div>
    </div>
@@ -39,39 +39,25 @@
 
    <div class="lead">
       <h1 class="text-center">{{pageTitle}}</h1>
+      <h3 class="text-center">{{subTitle}}</h3>
    </div>
+   <div class="row">
+      <div class="col-sm-4">
 
-   <div class="list-group">
+      </div>
+      <div class="col-sm-4">
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="6SPU6NBXAR5SE" />
+            <input type="hidden" name="item_name" value="Web Hosting is expensive. Support my work." />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+         </form>
+      </div>
+      <div class="col-sm-4">
 
-      <a href="{{ asobini.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ asobini.name }}</h4>
-      </a>
-
-      <a href="{{ barakamon.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ barakamon.name }}</h4>
-      </a>
-
-      <a href="{{ danmachi.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ danmachi.name }}</h4>
-      </a>
-
-      <a href="{{ withmysmartphone.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ withmysmartphone.name }}</h4>
-      </a>
-
-      <a href="{{ newgame.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ newgame.name }}</h4>
-      </a>
-
-      <a href="{{ mikagura.id }}"
-         class="list-group-item">
-         <h4 class="text-center">{{ mikagura.name }}</h4>
-      </a>
+      </div>
    </div>
 
 </div>

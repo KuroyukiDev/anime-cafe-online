@@ -79,6 +79,13 @@ app.get('/dubbed', (req, res) => {
   });
 });
 
+app.get('/donate', (req, res) => {
+  res.render('donate.hbs', {
+    pageTitle: 'Support My Projects!',
+    subTitle: '~ Donate ~'
+  });
+});
+
 // Use Routes
 app.use(animeData.anime[0].id, barakamondubroute);
 app.use(animeData.anime[1].id, danmachidubroute);
