@@ -8,6 +8,7 @@ const withmysmartphonedubroute = require('./routes/dubbed/withmysmartphone');
 const newgamedubroute = require('./routes/dubbed/newgame');
 const mikaguradubroute = require('./routes/dubbed/mikagura');
 const asobinidubroute = require('./routes/dubbed/asobiniikuyo');
+const gamersdubroute = require('./routes/dubbed/gamers');
 
 const port = process.env.PORT || 3000;
 let app = express();
@@ -75,6 +76,10 @@ app.get('/dubbed', (req, res) => {
     asobini: {
       name: anime[5].name,
       id: anime[5].id
+    },
+    gamers: {
+      name: anime[6].name,
+      id: anime[6].id
     }
   });
 });
@@ -93,6 +98,7 @@ app.use(animeData.anime[2].id, withmysmartphonedubroute);
 app.use(animeData.anime[3].id, newgamedubroute);
 app.use(animeData.anime[4].id, mikaguradubroute);
 app.use(animeData.anime[5].id, asobinidubroute);
+app.use(animeData.anime[6].id, gamersdubroute);
 
 // app.get('/:id', (req, res) => {
 //     let anime = animeData.anime;

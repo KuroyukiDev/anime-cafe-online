@@ -563,6 +563,85 @@ module.exports.animeData = {
           id: "/asobi-ni-iku-yo/13"
         }
       ]
+    },
+    {
+      name: "Gamers!",
+      index: 6,
+      id: "/dubbed/gamers",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/q2geic8jx0mrko5/Gamers%20Episode%201.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/gamers/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/d8q74kaggkpmo83/Gamers%20Episode%202.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/gamers/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/25m099sgza1h3fw/Gamers%20Episode%203.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/gamers/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/5cqtdedvqow80vw/Gamers%20Episode%204.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/gamers/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/vqk6wx2h1qbyz1z/Gamers%20Episode%205.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/gamers/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/leh4rexjheo3sb0/Gamers%20Episode%206.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/gamers/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/bnnnshhv0pf59ik/Gamers%20Episode%207.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/gamers/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/jlrd4gi1f6wqr5y/Gamers%20Episode%208.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/gamers/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/cj9gc6titszheb2/Gamers%20Episode%209.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/gamers/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/eixfkn85g9l9o2s/Gamers%20Episode%2010.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/gamers/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/uw83jzk645w2wuu/Gamers%20Episode%2011.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/gamers/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/mjxcnzz4ad3a6q2/Gamers%20Episode%2012.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/gamers/12"
+        }
+      ]
     }
   ]
 };
