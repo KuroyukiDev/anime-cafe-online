@@ -79,7 +79,7 @@ app.get('/dubbed', (req, res) => {
       id: anime[4].id
     },
     asobini: {
-      banner: anime[6].imgSrc,
+      banner: anime[5].imgSrc,
       name: anime[5].name,
       id: anime[5].id
     },
