@@ -41,85 +41,93 @@
       <h1 class="text-center">{{pageTitle}}</h1>
    </div>
 
-   <div class="list-group">
+   <div class="row">
+      <div class="col-sm-6">
+         <div class="list-group">
+            <a href="{{ asobini.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ asobini.banner }}"
+                     alt="Cover image banner for {{ asobini.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ asobini.name }}</h4>
+            </a>
 
-      <a href="{{ asobini.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ asobini.banner }}"
-               alt="Cover image banner for {{ asobini.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ asobini.name }}</h4>
-      </a>
+            <a href="{{ barakamon.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ barakamon.banner }}"
+                     alt="Cover image banner for {{ barakamon.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ barakamon.name }}</h4>
+            </a>
 
-      <a href="{{ barakamon.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ barakamon.banner }}"
-               alt="Cover image banner for {{ barakamon.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ barakamon.name }}</h4>
-      </a>
+            <a href="{{ danmachi.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ danmachi.banner }}"
+                     alt="Cover image banner for {{ danmachi.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ danmachi.name }}</h4>
+            </a>
+            
+            <a href="{{ withmysmartphone.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ withmysmartphone.banner }}"
+                     alt="Cover image banner for {{ withmysmartphone.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ withmysmartphone.name }}</h4>
+            </a>
 
-      <a href="{{ danmachi.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ danmachi.banner }}"
-               alt="Cover image banner for {{ danmachi.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ danmachi.name }}</h4>
-      </a>
+         </div>
+      </div>
 
-      <a href="{{ withmysmartphone.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ withmysmartphone.banner }}"
-               alt="Cover image banner for {{ withmysmartphone.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ withmysmartphone.name }}</h4>
-      </a>
+      <div class="col-sm-6">
+         <div class="list-group">
 
-      <a href="{{ newgame.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ newgame.banner }}"
-               alt="Cover image banner for {{ newgame.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ newgame.name }}</h4>
-      </a>
+            <a href="{{ newgame.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ newgame.banner }}"
+                     alt="Cover image banner for {{ newgame.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ newgame.name }}</h4>
+            </a>
 
-      <a href="{{ mikagura.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ mikagura.banner }}"
-               alt="Cover image banner for {{ mikagura.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ mikagura.name }}</h4>
-      </a>
+            <a href="{{ mikagura.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ mikagura.banner }}"
+                     alt="Cover image banner for {{ mikagura.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ mikagura.name }}</h4>
+            </a>
 
-      <a href="{{ gamers.id }}"
-         class="list-group-item">
-         <img
-               class="img-responsive"
-               style="max-height: 70px; height: 35px; width: 100%;"
-               src="{{ gamers.banner }}"
-               alt="Cover image banner for {{ gamers.name }} with the name of the series and some characters from the series"
-         />
-         <h4 class="text-center">{{ gamers.name }}</h4>
-      </a>
-
+            <a href="{{ gamers.id }}"
+               class="list-group-item">
+               <img
+                     class="img-responsive"
+                     style="height: 25vh; width: 100%;"
+                     src="{{ gamers.banner }}"
+                     alt="Cover image banner for {{ gamers.name }} with the name of the series and some characters from the series"
+               />
+               <h4 class="text-center">{{ gamers.name }}</h4>
+            </a>
+         </div>
+      </div>
    </div>
 
 </div>

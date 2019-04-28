@@ -3,7 +3,7 @@ module.exports.animeData = {
     {
       name: "Barakamon",
       index: 0,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/barakamon-banner.png",
+      imgSrc: "https://www.dropbox.com/s/7uv6q9oyhnie8sb/barakamon-banner.png?dl=1",
       id: "/dubbed/barakamon",
       eps: [
         {
@@ -83,7 +83,7 @@ module.exports.animeData = {
     {
       name: "Danmachi",
       index: 1,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/danmachi-banner.png",
+      imgSrc: "https://www.dropbox.com/s/i8uv9mc2winktsl/danmachi-banner.png?dl=1",
       id: "/dubbed/danmachi",
       eps: [
         {
@@ -175,7 +175,7 @@ module.exports.animeData = {
     {
       name: "In Another World With My Smartphone",
       index: 2,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/withmysmartphone-banner.png",
+      imgSrc: "https://www.dropbox.com/s/lkhnwxc426km1cs/withmysmartphone-banner.png?dl=1",
       id: "/dubbed/in-another-world-with-my-smartphone",
       eps: [
         {
@@ -255,7 +255,7 @@ module.exports.animeData = {
     {
       name: "New Game!",
       index: 3,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/new-game-banner.png",
+      imgSrc: "https://www.dropbox.com/s/kf03rsfqcpciy09/new-game-banner.png?dl=1",
       id: "/dubbed/new-game",
       eps: [
         {
@@ -407,7 +407,7 @@ module.exports.animeData = {
     {
       name: "Mikagura School Suite",
       index: 4,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/mikagura-banner.png",
+      imgSrc: "https://www.dropbox.com/s/tpqdnm05xebgqru/mikagura-banner.png?dl=1",
       id: "/dubbed/mikagura-school-suite",
       eps: [
         {
@@ -487,7 +487,7 @@ module.exports.animeData = {
     {
       name: "Asobi Ni Iku Yo!",
       index: 5,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/asobini-banner.png",
+      imgSrc: "https://www.dropbox.com/s/zwd7yrlp2ny6dqr/asobini-banner.png?dl=1",
       id: "/dubbed/asobi-ni-iku-yo",
       eps: [
         {
@@ -573,7 +573,7 @@ module.exports.animeData = {
     {
       name: "Gamers!",
       index: 6,
-      imgSrc: "http://anime-cafe.herokuapp.com/images/gamers-banner.png",
+      imgSrc: "https://www.dropbox.com/s/zwd7yrlp2ny6dqr/asobini-banner.png?dl=1",
       id: "/dubbed/gamers",
       eps: [
         {
