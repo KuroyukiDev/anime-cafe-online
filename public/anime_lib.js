@@ -573,7 +573,7 @@ module.exports.animeData = {
     {
       name: "Gamers!",
       index: 6,
-      imgSrc: "https://www.dropbox.com/s/zwd7yrlp2ny6dqr/asobini-banner.png?dl=1",
+      imgSrc: "https://www.dropbox.com/s/c0e0q93hc77lnnu/gamers-banner.png?dl=1",
       id: "/dubbed/gamers",
       eps: [
         {
