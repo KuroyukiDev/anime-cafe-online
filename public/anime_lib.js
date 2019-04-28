@@ -3,6 +3,7 @@ module.exports.animeData = {
     {
       name: "Barakamon",
       index: 0,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/barakamon-banner.png",
       id: "/dubbed/barakamon",
       eps: [
         {
@@ -82,6 +83,7 @@ module.exports.animeData = {
     {
       name: "Danmachi",
       index: 1,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/danmachi-banner.png",
       id: "/dubbed/danmachi",
       eps: [
         {
@@ -173,6 +175,7 @@ module.exports.animeData = {
     {
       name: "In Another World With My Smartphone",
       index: 2,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/withmysmartphone-banner.png",
       id: "/dubbed/in-another-world-with-my-smartphone",
       eps: [
         {
@@ -252,6 +255,7 @@ module.exports.animeData = {
     {
       name: "New Game!",
       index: 3,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/new-game-banner.png",
       id: "/dubbed/new-game",
       eps: [
         {
@@ -403,6 +407,7 @@ module.exports.animeData = {
     {
       name: "Mikagura School Suite",
       index: 4,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/mikagura-banner.png",
       id: "/dubbed/mikagura-school-suite",
       eps: [
         {
@@ -482,6 +487,7 @@ module.exports.animeData = {
     {
       name: "Asobi Ni Iku Yo!",
       index: 5,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/asobini-banner.png",
       id: "/dubbed/asobi-ni-iku-yo",
       eps: [
         {
@@ -567,6 +573,7 @@ module.exports.animeData = {
     {
       name: "Gamers!",
       index: 6,
+      imgSrc: "http://anime-cafe.herokuapp.com/images/gamers-banner.png",
       id: "/dubbed/gamers",
       eps: [
         {

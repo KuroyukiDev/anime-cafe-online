@@ -54,30 +54,37 @@ app.get('/dubbed', (req, res) => {
   res.render('dubbed.hbs', {
     pageTitle: 'Dubbed Anime List',
     barakamon: {
+      banner: anime[0].imgSrc,
       name: anime[0].name,
       id: anime[0].id
     },
     danmachi: {
+      banner: anime[1].imgSrc,
       name: anime[1].name,
       id: anime[1].id
     },
     withmysmartphone: {
+      banner: anime[2].imgSrc,
       name: anime[2].name,
       id: anime[2].id
     },
     newgame: {
+      banner: anime[3].imgSrc,
       name: anime[3].name,
       id: anime[3].id
     },
     mikagura: {
+      banner: anime[4].imgSrc,
       name: anime[4].name,
       id: anime[4].id
     },
     asobini: {
+      banner: anime[6].imgSrc,
       name: anime[5].name,
       id: anime[5].id
     },
     gamers: {
+      banner: anime[6].imgSrc,
       name: anime[6].name,
       id: anime[6].id
     }
