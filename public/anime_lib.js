@@ -906,6 +906,92 @@ module.exports.animeData = {
           id: "/monmusu/15"
         }
       ]
+    },
+    {
+      name: "Interviews With Monster Girls",
+      index: 9,
+      imgSrc: "https://www.dropbox.com/s/bghgwt7hk2zb0fa/demichan-kataritai-banner.jpg?dl=1",
+      id: "/dubbed/demichan-kataritai",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/r3f6xlmeromrlo3/InterviewsWithMonsterGirls1.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/demichan-kataritai/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/06gl6mylh1ncyhl/InterviewsWithMonsterGirls2.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/demichan-kataritai/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/gwp408jc36jqpx4/InterviewsWithMonsterGirls3.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/demichan-kataritai/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/d1170sdvo8yczyp/InterviewsWithMonsterGirls4.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/demichan-kataritai/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/pidf2o4jwbhwil8/InterviewsWithMonsterGirls5.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/demichan-kataritai/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/kigvdcisy0zutbs/InterviewsWithMonsterGirls6.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/demichan-kataritai/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/yjh8mbiccff1ooe/InterviewsWithMonsterGirls7.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/demichan-kataritai/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/lm80u15ud9fuvam/InterviewsWithMonsterGirls8.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/demichan-kataritai/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/3knh9ol7u1607fy/InterviewsWithMonsterGirls9.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/demichan-kataritai/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/ew83501k226kyk4/InterviewsWithMonsterGirls10.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/demichan-kataritai/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/kb2h3pwqoqq6xpq/InterviewsWithMonsterGirls11.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/demichan-kataritai/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/hbyw1k37z3ezhzs/InterviewsWithMonsterGirls12.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/demichan-kataritai/12"
+        },
+        {
+          src: "https://www.dropbox.com/s/ty7qlcszcfq0ag1/InterviewsWithMonsterGirls13.mp4?dl=1",
+          ep_num: "13 OVA",
+          index: 12,
+          id: "/demichan-kataritai/13"
+        }
+      ]
     }
   ]
 };

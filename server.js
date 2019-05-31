@@ -11,6 +11,7 @@ const asobinidubroute = require('./routes/dubbed/asobiniikuyo');
 const gamersdubroute = require('./routes/dubbed/gamers');
 const haganaidubroute = require('./routes/dubbed/haganai');
 const monmusudubroute = require('./routes/dubbed/monmusu');
+const demichankataritaidubroute = require('./routes/dubbed/demichankataritai');
 
 const port = process.env.PORT || 3000;
 let app = express();
@@ -99,6 +100,11 @@ app.get('/dubbed', (req, res) => {
       banner: anime[8].imgSrc,
       name: anime[8].name,
       id: anime[8].id
+    },
+    demichankataritai: {
+      banner: anime[9].imgSrc,
+      name: anime[9].name,
+      id: anime[9].id
     }
   });
 });
@@ -120,6 +126,7 @@ app.use(animeData.anime[5].id, asobinidubroute);
 app.use(animeData.anime[6].id, gamersdubroute);
 app.use(animeData.anime[7].id, haganaidubroute);
 app.use(animeData.anime[8].id, monmusudubroute);
+app.use(animeData.anime[9].id, demichankataritaidubroute);
 
 // app.get('/:id', (req, res) => {
 //     let anime = animeData.anime;
