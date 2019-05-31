@@ -4,9 +4,9 @@ const animeData = require('./../../public/anime_lib.js').animeData;
 
 router.get('/', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
-  res.render('mikagura.hbs', {
+  res.render('monmusu.hbs', {
     pageTitle: anime.name,
     banner: anime.imgSrc,
     ep1: {
@@ -56,26 +56,38 @@ router.get('/', (req, res) => {
     ep12: {
       name: `${anime.name} - EP #${anime.eps[11].ep_num}`,
       id: `/dubbed${anime.eps[11].id}`
+    },
+    ep13: {
+      name: `${anime.name} - EP #${anime.eps[12].ep_num}`,
+      id: `/dubbed${anime.eps[12].id}`
+    },
+    ep14: {
+      name: `${anime.name} - EP #${anime.eps[13].ep_num}`,
+      id: `/dubbed${anime.eps[13].id}`
+    },
+    ep15: {
+      name: `${anime.name} - EP #${anime.eps[14].ep_num}`,
+      id: `/dubbed${anime.eps[14].id}`
     }
   });
 });
 
 router.get('/1', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[0].ep_num}`,
     vidUrl: anime.eps[0].src,
     listid: anime.id,
-    previd: `/dubbed${anime.eps[11].id}`,
+    previd: `/dubbed${anime.eps[14].id}`,
     nextid: `/dubbed${anime.eps[1].id}`
   });
 });
 
 router.get('/2', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[1].ep_num}`,
@@ -88,7 +100,7 @@ router.get('/2', (req, res) => {
 
 router.get('/3', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[2].ep_num}`,
@@ -101,7 +113,7 @@ router.get('/3', (req, res) => {
 
 router.get('/4', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[3].ep_num}`,
@@ -114,7 +126,7 @@ router.get('/4', (req, res) => {
 
 router.get('/5', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[4].ep_num}`,
@@ -127,7 +139,7 @@ router.get('/5', (req, res) => {
 
 router.get('/6', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[5].ep_num}`,
@@ -140,7 +152,7 @@ router.get('/6', (req, res) => {
 
 router.get('/7', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[6].ep_num}`,
@@ -153,7 +165,7 @@ router.get('/7', (req, res) => {
 
 router.get('/8', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[7].ep_num}`,
@@ -166,7 +178,7 @@ router.get('/8', (req, res) => {
 
 router.get('/9', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[8].ep_num}`,
@@ -179,7 +191,7 @@ router.get('/9', (req, res) => {
 
 router.get('/10', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[9].ep_num}`,
@@ -192,7 +204,7 @@ router.get('/10', (req, res) => {
 
 router.get('/11', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[10].ep_num}`,
@@ -205,13 +217,52 @@ router.get('/11', (req, res) => {
 
 router.get('/12', (req, res) => {
   
-  let anime = animeData.anime[4];
+  let anime = animeData.anime[8];
   
   res.render('vidPlayer.hbs', {
     pageTitle: `${anime.name} - EP #${anime.eps[11].ep_num}`,
     vidUrl: anime.eps[11].src,
     listid: anime.id,
     previd: `/dubbed${anime.eps[10].id}`,
+    nextid: `/dubbed${anime.eps[12].id}`
+  });
+});
+
+router.get('/13', (req, res) => {
+  
+  let anime = animeData.anime[8];
+  
+  res.render('vidPlayer.hbs', {
+    pageTitle: `${anime.name} - EP #${anime.eps[12].ep_num}`,
+    vidUrl: anime.eps[12].src,
+    listid: anime.id,
+    previd: `/dubbed${anime.eps[11].id}`,
+    nextid: `/dubbed${anime.eps[13].id}`
+  });
+});
+
+router.get('/14', (req, res) => {
+  
+  let anime = animeData.anime[8];
+  
+  res.render('vidPlayer.hbs', {
+    pageTitle: `${anime.name} - EP #${anime.eps[13].ep_num}`,
+    vidUrl: anime.eps[13].src,
+    listid: anime.id,
+    previd: `/dubbed${anime.eps[12].id}`,
+    nextid: `/dubbed${anime.eps[14].id}`
+  });
+});
+
+router.get('/15', (req, res) => {
+  
+  let anime = animeData.anime[8];
+  
+  res.render('vidPlayer.hbs', {
+    pageTitle: `${anime.name} - EP #${anime.eps[14].ep_num}`,
+    vidUrl: anime.eps[14].src,
+    listid: anime.id,
+    previd: `/dubbed${anime.eps[13].id}`,
     nextid: `/dubbed${anime.eps[0].id}`
   });
 });

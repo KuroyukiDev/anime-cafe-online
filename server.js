@@ -9,6 +9,8 @@ const newgamedubroute = require('./routes/dubbed/newgame');
 const mikaguradubroute = require('./routes/dubbed/mikagura');
 const asobinidubroute = require('./routes/dubbed/asobiniikuyo');
 const gamersdubroute = require('./routes/dubbed/gamers');
+const haganaidubroute = require('./routes/dubbed/haganai');
+const monmusudubroute = require('./routes/dubbed/monmusu');
 
 const port = process.env.PORT || 3000;
 let app = express();
@@ -17,7 +19,7 @@ hbs.registerPartials(__dirname + '/views');
 app.set('view engine', 'hbs');
 
 
-// Mainenance Page Activator
+// Maintenance Page Activator
 // (INFO: Comment out to deactivate Maintenance Page - Uncomment to activate it)
 
 // app.use((req,res,next) => {
@@ -87,6 +89,16 @@ app.get('/dubbed', (req, res) => {
       banner: anime[6].imgSrc,
       name: anime[6].name,
       id: anime[6].id
+    },
+    haganai: {
+      banner: anime[7].imgSrc,
+      name: `${anime[7].name1} + ${anime[7].name2}`,
+      id: anime[7].id
+    },
+    monmusu: {
+      banner: anime[8].imgSrc,
+      name: anime[8].name,
+      id: anime[8].id
     }
   });
 });
@@ -106,6 +118,8 @@ app.use(animeData.anime[3].id, newgamedubroute);
 app.use(animeData.anime[4].id, mikaguradubroute);
 app.use(animeData.anime[5].id, asobinidubroute);
 app.use(animeData.anime[6].id, gamersdubroute);
+app.use(animeData.anime[7].id, haganaidubroute);
+app.use(animeData.anime[8].id, monmusudubroute);
 
 // app.get('/:id', (req, res) => {
 //     let anime = animeData.anime;

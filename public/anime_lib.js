@@ -649,6 +649,263 @@ module.exports.animeData = {
           id: "/gamers/12"
         }
       ]
+    },
+    {
+      name1: "Haganai",
+      name2: "Haganai Next",
+      index: 7,
+      imgSrc: "https://www.dropbox.com/s/zc55s2juucl9y7x/haganai-banner.jpg?dl=1",
+      id: "/dubbed/haganai",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/519pf5f21bme5hc/Haganai-ep1.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/haganai/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/6oof8pwqkoacooe/Haganai-ep2.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/haganai/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/f0fi94x3hahdjcf/Haganai-ep3.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/haganai/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/mcftwnhyurhzs4o/Haganai-ep4.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/haganai/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/5jgyr611qsya4za/Haganai-ep5.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/haganai/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/2kgw6izppy6ekp8/Haganai-ep6.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/haganai/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/5ol006dbpbbeipi/Haganai-ep7.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/haganai/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/jdsftwnw0x65dfd/Haganai-ep8.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/haganai/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/1cdyonghrdsvbo4/Haganai-ep9.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/haganai/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/mo58knngdor9adl/Haganai-ep10.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/haganai/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/25k3qnf5thv652n/Haganai-ep11.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/haganai/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/68ipag672nyntfo/Haganai-ep12.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/haganai/12"
+        },
+        {
+          src: "https://www.dropbox.com/s/1a8376s5wr3ufj0/Haganai-ep13.mp4?dl=1",
+          ep_num: "13 OVA",
+          index: 12,
+          id: "/haganai/13"
+        },
+        { // Haganai Next EPs Start Here
+          src: "https://www.dropbox.com/s/d8sipfvl21a4hdm/Haganai-Next-ep1.mp4?dl=1",
+          ep_num: 1,
+          index: 13,
+          id: "/haganai/14"
+        },
+        {
+          src: "https://www.dropbox.com/s/mrdudl7gscjrrn5/Haganai-Next-ep2.mp4?dl=1",
+          ep_num: 2,
+          index: 14,
+          id: "/haganai/15"
+        },
+        {
+          src: "https://www.dropbox.com/s/yx5usi9wb0vh3pm/Haganai-Next-ep3.mp4?dl=1",
+          ep_num: 3,
+          index: 15,
+          id: "/haganai/16"
+        },
+        {
+          src: "https://www.dropbox.com/s/xhpvfszr43nbd28/Haganai-Next-ep4.mp4?dl=1",
+          ep_num: 4,
+          index: 16,
+          id: "/haganai/17"
+        },
+        {
+          src: "https://www.dropbox.com/s/d3o8idebnknu86v/Haganai-Next-ep5.mp4?dl=1",
+          ep_num: 5,
+          index: 17,
+          id: "/haganai/18"
+        },
+        {
+          src: "https://www.dropbox.com/s/wby88rtindgfdyf/Haganai-Next-ep6.mp4?dl=1",
+          ep_num: 6,
+          index: 18,
+          id: "/haganai/19"
+        },
+        {
+          src: "https://www.dropbox.com/s/u7sf1ekfpnenk5z/Haganai-Next-ep7.mp4?dl=1",
+          ep_num: 7,
+          index: 19,
+          id: "/haganai/20"
+        },
+        {
+          src: "https://www.dropbox.com/s/3zbvihdql2zla4u/Haganai-Next-ep8.mp4?dl=1",
+          ep_num: 8,
+          index: 20,
+          id: "/haganai/21"
+        },
+        {
+          src: "https://www.dropbox.com/s/yvldtm9c3tb4yg7/Haganai-Next-ep9.mp4?dl=1",
+          ep_num: 9,
+          index: 21,
+          id: "/haganai/22"
+        },
+        {
+          src: "https://www.dropbox.com/s/nkepxctnj5mfqmn/Haganai-Next-ep10.mp4?dl=1",
+          ep_num: 10,
+          index: 22,
+          id: "/haganai/23"
+        },
+        {
+          src: "https://www.dropbox.com/s/vpuojhz87no7sld/Haganai-Next-ep11.mp4?dl=1",
+          ep_num: 11,
+          index: 23,
+          id: "/haganai/24"
+        },
+        {
+          src: "https://www.dropbox.com/s/d039ouror2amf10/Haganai-Next-ep12.mp4?dl=1",
+          ep_num: 12,
+          index: 24,
+          id: "/haganai/25"
+        }
+      ]
+    },
+    {
+      name: "Monmusu",
+      index: 8,
+      imgSrc: "https://www.dropbox.com/s/ndz0vzwl3gt7w8t/monmusu-banner.jpg?dl=1",
+      id: "/dubbed/monmusu",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/qfnlmxfzsu3gnyc/monmusu-1.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/monmusu/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/oxt6z8wiqt87klt/monmusu-2.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/monmusu/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/hvzldr5umjks4gj/monmusu-3.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/monmusu/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/erdhm91pr0o0hfi/monmusu-4.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/monmusu/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/me8i0ue8vewy5au/monmusu-5.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/monmusu/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/v06vy8vwus6jtch/monmusu-6.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/monmusu/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/u2tyrxq9jk69irp/monmusu-7.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/monmusu/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/fnfc1993t6yykys/monmusu-8.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/monmusu/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/62mo9qlswj54ty6/monmusu-9.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/monmusu/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/i4t183pjr8eb1th/monmusu-10.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/monmusu/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/o4bqdby65vbbyv3/monmusu-11.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/monmusu/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/j288i9cplkb66m0/monmusu-12.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/monmusu/12"
+        },
+        {
+          src: "https://www.dropbox.com/s/6n6x3zfww1vpia1/monmusu-13.mp4?dl=1",
+          ep_num: "13 OVA",
+          index: 12,
+          id: "/monmusu/13"
+        },
+        {
+          src: "https://www.dropbox.com/s/vld9jofbs8xmn7l/monmusu-14.mp4?dl=1",
+          ep_num: "14 OVA",
+          index: 13,
+          id: "/monmusu/14"
+        },
+        {
+          src: "https://www.dropbox.com/s/s0hw4c0om6te8v4/monmusu-15.mp4?dl=1",
+          ep_num: "15 (Shorts)",
+          index: 14,
+          id: "/monmusu/15"
+        }
+      ]
     }
   ]
 };

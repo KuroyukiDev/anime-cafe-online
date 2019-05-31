@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
    
    res.render('newgame.hbs', {
       pageTitle: anime.name,
+      banner: anime.imgSrc,
       ep1: {
          name: `${anime.name} - ${anime.eps[0].ep_num}`,
          id: `/dubbed${anime.eps[0].id}`

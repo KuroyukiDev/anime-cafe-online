@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
   
   res.render('danmachi.hbs', {
     pageTitle: anime.name,
+    banner: anime.imgSrc,
     ep1: {
       name: `${anime.name} - EP #${anime.eps[0].ep_num}`,
       id: `/dubbed${anime.eps[0].id}`
@@ -75,7 +76,7 @@ router.get('/1', (req, res) => {
     pageTitle: `${anime.name} - EP #${anime.eps[0].ep_num}`,
     vidUrl: anime.eps[0].src,
     listid: anime.id,
-    previd: `/dubbed${anime.eps[11].id}`,
+    previd: `/dubbed${anime.eps[13].id}`,
     nextid: `/dubbed${anime.eps[1].id}`
   });
 });

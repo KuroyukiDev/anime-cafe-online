@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
   
   res.render('asobiniikuyo.hbs', {
     pageTitle: anime.name,
+    banner: anime.imgSrc,
     ep1: {
       name: `${anime.name} - EP #${anime.eps[0].ep_num}`,
       id: `/dubbed${anime.eps[0].id}`
