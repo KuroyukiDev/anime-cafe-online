@@ -992,6 +992,86 @@ module.exports.animeData = {
           id: "/demichan-kataritai/13"
         }
       ]
+    },
+    {
+      name: "Soul Eater Not!",
+      index: 10,
+      imgSrc: "https://www.dropbox.com/s/59vzo7nid1mazeg/soul-eater-not-banner.jpg?dl=1",
+      id: "/dubbed/soul-eater-not",
+      eps: [
+        {
+          src: "https://www.dropbox.com/s/bn6gd3wvysj5sys/Soul%20Eater%20Not%21%20Episode%201.mp4?dl=1",
+          ep_num: 1,
+          index: 0,
+          id: "/soul-eater-not/1"
+        },
+        {
+          src: "https://www.dropbox.com/s/655bedzd2ybq8vb/Soul%20Eater%20Not%21%20Episode%202.mp4?dl=1",
+          ep_num: 2,
+          index: 1,
+          id: "/soul-eater-not/2"
+        },
+        {
+          src: "https://www.dropbox.com/s/79xs4f2fl5rh6m8/Soul%20Eater%20Not%21%20Episode%203.mp4?dl=1",
+          ep_num: 3,
+          index: 2,
+          id: "/soul-eater-not/3"
+        },
+        {
+          src: "https://www.dropbox.com/s/iouv1i8lrdt9qji/Soul%20Eater%20Not%21%20Episode%204.mp4?dl=1",
+          ep_num: 4,
+          index: 3,
+          id: "/soul-eater-not/4"
+        },
+        {
+          src: "https://www.dropbox.com/s/8m3wg4dkgjw8avx/Soul%20Eater%20Not%21%20Episode%205.mp4?dl=1",
+          ep_num: 5,
+          index: 4,
+          id: "/soul-eater-not/5"
+        },
+        {
+          src: "https://www.dropbox.com/s/nkug2wvku29n4zn/Soul%20Eater%20Not%21%20Episode%206.mp4?dl=1",
+          ep_num: 6,
+          index: 5,
+          id: "/soul-eater-not/6"
+        },
+        {
+          src: "https://www.dropbox.com/s/6p3uyqbyj1zmh8h/Soul%20Eater%20Not%21%20Episode%207.mp4?dl=1",
+          ep_num: 7,
+          index: 6,
+          id: "/soul-eater-not/7"
+        },
+        {
+          src: "https://www.dropbox.com/s/ama9y6dml2ldl3x/Soul%20Eater%20Not%21%20Episode%208.mp4?dl=1",
+          ep_num: 8,
+          index: 7,
+          id: "/soul-eater-not/8"
+        },
+        {
+          src: "https://www.dropbox.com/s/pnf8ced418n4j9e/Soul%20Eater%20Not%21%20Episode%209.mp4?dl=1",
+          ep_num: 9,
+          index: 8,
+          id: "/soul-eater-not/9"
+        },
+        {
+          src: "https://www.dropbox.com/s/rg283pahgbhfudr/Soul%20Eater%20Not%21%20Episode%2010.mp4?dl=1",
+          ep_num: 10,
+          index: 9,
+          id: "/soul-eater-not/10"
+        },
+        {
+          src: "https://www.dropbox.com/s/1l6q6bc7d9oehgb/Soul%20Eater%20Not%21%20Episode%2011.mp4?dl=1",
+          ep_num: 11,
+          index: 10,
+          id: "/soul-eater-not/11"
+        },
+        {
+          src: "https://www.dropbox.com/s/kwn5sjjckifig0k/Soul%20Eater%20Not%21%20Episode%2012.mp4?dl=1",
+          ep_num: 12,
+          index: 11,
+          id: "/soul-eater-not/12"
+        }
+      ]
     }
   ]
 };

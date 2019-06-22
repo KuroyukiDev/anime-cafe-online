@@ -12,6 +12,7 @@ const gamersdubroute = require('./routes/dubbed/gamers');
 const haganaidubroute = require('./routes/dubbed/haganai');
 const monmusudubroute = require('./routes/dubbed/monmusu');
 const demichankataritaidubroute = require('./routes/dubbed/demichankataritai');
+const souleaternotdubroute = require('./routes/dubbed/souleaternot');
 
 const port = process.env.PORT || 3000;
 let app = express();
@@ -105,6 +106,11 @@ app.get('/dubbed', (req, res) => {
       banner: anime[9].imgSrc,
       name: anime[9].name,
       id: anime[9].id
+    },
+    souleaternot: {
+      banner: anime[10].imgSrc,
+      name: anime[10].name,
+      id: anime[10].id
     }
   });
 });
@@ -127,6 +133,7 @@ app.use(animeData.anime[6].id, gamersdubroute);
 app.use(animeData.anime[7].id, haganaidubroute);
 app.use(animeData.anime[8].id, monmusudubroute);
 app.use(animeData.anime[9].id, demichankataritaidubroute);
+app.use(animeData.anime[10].id, souleaternotdubroute);
 
 // app.get('/:id', (req, res) => {
 //     let anime = animeData.anime;
